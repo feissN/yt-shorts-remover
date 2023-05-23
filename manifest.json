@@ -1,0 +1,34 @@
+{
+    "manifest_version": 3,
+    "name": "YouTube shorts remover",
+    "description": "Remove shorts from your Subscriptions-Feed",
+    "version": "1.0.0",
+    "action": {
+        "default_popup": "html/popup.html",
+        "default_title": "YouTube shorts remover",
+        "default_icon": {
+            "64": "image/64.png"
+        }
+    },
+    "content_scripts": [
+        {
+            "js": [
+                "js/content.js"
+            ],
+            "matches": [
+                "https://www.youtube.com/feed/subscriptions/*"
+            ]
+        }
+    ],
+    "icons": {
+        "64": "image/64.png"
+    },
+    "permissions": [
+        "tabs",
+        "activeTab",
+        "scripting"
+    ],
+    "host_permissions": [
+        "https://www.youtube.com/*"
+    ]
+}

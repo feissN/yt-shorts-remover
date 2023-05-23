@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
+
+body {
+    width: 250px;
+    background-color: #101010;
+    margin: 15px 20px;
+    font-family: "Josefin Sans", monospace;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+}
+
+.remove {
+    padding: 1rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+    background-color: #303030;
+    color: white;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+}
+
+.remove:hover {
+    background-color: #353535;
+}
